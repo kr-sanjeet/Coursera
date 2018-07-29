@@ -29,7 +29,6 @@ void merge(long long int arr[], int l, int m, int r)
 		}
 		k++;
 	}
-
 	while (i < n1)
 	{
 		arr[k] = L[i];
@@ -44,17 +43,13 @@ void merge(long long int arr[], int l, int m, int r)
 		k++;
 	}
 }
-
 void mergeSort(long long int arr[], int l, int r)
 {
 	if (l < r)
 	{
-
 		int m = l+(r-l)/2;
-
 		mergeSort(arr, l, m);
 		mergeSort(arr, m+1, r);
-
 		merge(arr, l, m, r);
 	}
 }
@@ -72,8 +67,6 @@ mergeSort(number, 0, n1-1);
 
 for(int i=0;i<n1;i++)
 cout<<number[i]<<" ";
-
 cout<<endl;
-
   return 0;
 }
